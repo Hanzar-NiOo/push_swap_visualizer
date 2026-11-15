@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+
+  --color-primary-container: #00ffc8;
+  --color-surface-tint: #00e0b0;
+  --color-on-surface: #e3e2e5;
+  --color-surface-bright: #38393b;
+  --color-surface-dim: #121315;
+  --color-surface-variant: #343537;
+  --color-primary: #fcfffb;
+  --color-secondary-container: #025440;
+  --color-tertiary-fixed-dim: #e2c633;
+  --color-secondary-fixed-dim: #90d4ba;
+  --color-surface-container: #1f2022;
+  --color-primary-fixed-dim: #00e0b0;
+  --color-surface-container-low: #1b1c1e;
+  --color-on-surface-variant: #b9cbc1;
+  --color-surface: #121315;
+  --color-surface-container-highest: #343537;
+  --color-surface-container-high: #292a2c;
+  --color-tertiary-fixed: #ffe256;
+  --color-background: #121315;
+  --color-tertiary-container: #ffe14d;
+  --color-secondary: #90d4ba;
+  --color-surface-container-lowest: #0d0e10;
+  --color-on-background: #e3e2e5;
+  --color-primary-fixed: #2cffca;
+  --color-on-primary-container: #007258;
+  --color-outline-variant: #3a4a43;
+  --color-secondary-fixed: #acf1d6;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #00ffc844;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #00ffc888;
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Push Swap Visualizer",
+  "description": "A high-performance visualizer for the 42 push_swap sorting algorithm challenge, featuring real-time stack manipulation, operation history, and complexity analysis.",
+  "requestFramePermissions": []
+}
